@@ -1,0 +1,189 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1A2644;
+}
+
+/* Headings */
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #333333;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: #333333;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    color: #333333;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24.5px;
+    color: #6c757d; /* FIX: consistent paragraph color */
+}
+
+.text-muted {
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.2px;
+}
+
+/* Navbar */
+.navbar-brand img {
+    max-width: 130px;
+    height: auto;
+}
+
+.navbar-nav li a {
+    font-weight: 300;
+    color: #666666;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+    color: #6a37e9;
+}
+
+/* Image hover effect */
+.img-fluid:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Buttons */
+a.btn.cv {
+    background-color: #F8F9FA;
+    border: 2px solid #6a37e9;
+    color: #333333;
+    font-size: 14px;
+    width: 150px;
+    
+}
+@media screen and (max-width: 768px) {
+    a.btn.cv{
+        width: 100%;
+    }
+    
+}
+
+a.btn.cv:hover {
+    background-color: #6a37e9;
+    color: white;
+}
+
+a.btn.contact {
+    background-color: #F8F9FA;
+    border: 2px solid #d8d8d8;
+    color: #4f4f4f;
+    font-size: 14px;
+    width: 120px;
+}
+@media screen and (max-width: 768px) {
+    a.btn.contact {
+        width: 100%;
+    }
+}
+
+a.btn.contact:hover {
+    background-color: #e8e8e8;
+    color: #333333;
+}
+
+/* Companies Section */
+.companies-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.companies-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-logos 30s linear infinite;
+}
+
+@keyframes scroll-logos {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.company-logo {
+  max-width: 100px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.company-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Underline styles */
+:root {
+    --line-color1: #6a37e9;
+    --line-color2: #d8d8d8;
+}
+
+.section-title {
+    display: inline-block;
+    position: relative;
+}
+
+.title-underline {
+    display: flex;
+    height: 4px;
+    margin-top: 5px;
+}
+
+.line-part1 {
+    background-color: var(--line-color1);
+    width: 30px;
+    height: 2px;
+}
+
+.line-part2 {
+    background-color: var(--line-color2);
+    flex: 1;
+    height: 2px;
+}
+
+/* Achievement Section */
+.text-primary {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    color: #d8d8d8 !important;
+}
+
+/* Footer */
+footer .text-muted {
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333 !important;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+footer .text-muted:hover {
+    color: black !important;
+}
