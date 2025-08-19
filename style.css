@@ -167,6 +167,24 @@ a.btn.contact:hover {
     height: 2px;
 }
 
+/* Testimonial Section */
+
+.carousel-buttons .nav-button {
+  background: none;        
+  border: none; 
+  font-weight: 100;           
+  font-size: 2rem;         
+  color: #333;             
+  cursor: pointer;     
+  transition: color 0.3s ease;
+}
+
+.carousel-buttons .nav-button:hover {
+  color: #6a37e9;          /* hover color (your theme purple) */
+}
+
+
+
 /* Achievement Section */
 .text-primary {
     font-size: 48px;
@@ -187,3 +205,14 @@ footer .text-muted {
 footer .text-muted:hover {
     color: black !important;
 }
+
+
+.testimonial-card {
+    transition: transform 0.3s ease;
+  }
+  .testimonial-card p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #6c757d;
+  }
+  
